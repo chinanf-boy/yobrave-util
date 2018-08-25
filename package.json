@@ -53,7 +53,7 @@
 		"yobrave"
 	],
 	"dependencies": {
-		"turbocolor": "^2.6.1"
+		"colorette": "^1.0.1"
 	},
 	"devDependencies": {
 		"ava": "^0.25.0",

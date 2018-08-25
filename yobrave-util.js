@@ -1,5 +1,5 @@
 'use strict';
-const tc = require('turbocolor');
+const tc = require('colorette');
 
 const toS = (str, num = 2) => JSON.stringify(str, null, num);
 
@@ -14,6 +14,7 @@ exports = module.exports = {
 	c: tc.cyan,
 	y: tc.yellow,
 	b: tc.blue,
+	colors: tc,
 	toS,
 	getPath,
 	readFile,
