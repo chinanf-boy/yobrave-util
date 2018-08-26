@@ -24,3 +24,19 @@ test('readFile', t => {
 	m.readFile('./readme.md');
 	t.true(!!m.readFile);
 });
+
+test('newObj', t => {
+	let old = { a: 1 };
+	let n = m.newObj(old);
+	t.true(n !== old);
+});
+
+test('relative', t => {
+	let p = m.relative('./readme.md');
+	t.true(p.includes('readme.md'));
+});
+
+test('resolvePath', t => {
+	let p = m.resolvePath('./readme.md');
+	t.true(p.includes(__dirname));
+});
